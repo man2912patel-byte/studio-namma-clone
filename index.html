@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Studio Namma — Creative Digital Agency</title>
+  <meta name="description" content="Studio Namma is an independent creative studio crafting bold websites, brand systems, and digital experiences for pioneering brands.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="cursor" class="normal-cursor" aria-hidden="true"></div>
+
+  <div id="videocursor" class="video-cursor-hidden" aria-hidden="true">
+    <div class="video-inner">
+      <iframe
+        src="https://player.vimeo.com/video/1127104834?background=1&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&loop=1"
+        frameborder="0"
+        allow="autoplay; fullscreen; picture-in-picture"
+      ></iframe>
+    </div>
+  </div>
+
+  <header class="site-nav-header" id="siteNavHeader">
+    <div class="nav-container">
+      <div class="nav-grid">
+
+        <div class="nav-left-brand">
+          <a href="#hero" class="nav-brand">STUDIO NAMMA</a>
+        </div>
+
+        <div class="nav-center-mode">
+          <button class="dark-mode-toggle" id="darkModeBtn" aria-label="Toggle Dark and Light Mode">
+            <span class="dark-mode-label" id="darkModeLabel">DARK MODE</span>
+            <span class="dark-mode-indicator" aria-hidden="true"></span>
+          </button>
+        </div>
+
+        <div class="nav-center-menu">
+          <button class="nav-menu-trigger" id="navMenuBtn" aria-expanded="false" aria-controls="fullscreenMenu">
+            MENU
+          </button>
+        </div>
+
+        <div class="nav-right-talk">
+          <a href="#contact" class="nav-talk-link">LET'S TALK!</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="fullscreen-menu" id="fullscreenMenu" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Main Navigation">
+    <div class="menu-header-bar">
+      <div class="menu-logo-text">
+        <a href="#hero" class="menu-nav-home-btn">STUDIO NAMMA</a>
+      </div>
+
+      <div class="menu-theme-container">
+        <button class="dark-mode-toggle" id="menuDarkModeToggleBtn" aria-label="Toggle Theme">
+          <span class="dark-mode-label">DARK MODE</span>
+          <span class="dark-mode-indicator"></span>
+        </button>
+      </div>
+
+      <div class="menu-close-container">
+        <button class="menu-close-action-btn" id="menuCloseActionBtn" aria-label="Close Menu">
+          <span>CLOSE</span>
+          <span class="close-x-icon">✕</span>
+        </button>
+      </div>
+
+      <a href="#contact" class="menu-talk-action">LET'S TALK!</a>
+    </div>
+
+    <div class="menu-center-links">
+      <div class="menu-nav-grid">
+        <div class="menu-nav-column">
+          <div class="menu-link-wrapper">
+            <a href="#hero" class="menu-link-item">
+              <span>HOME</span>
+              <span class="menu-dot-indicator"></span>
+            </a>
+          </div>
+          <div class="menu-link-wrapper">
+            <a href="#work" class="menu-link-item">
+              <span>WORK</span>
+              <span class="menu-dot-indicator"></span>
+            </a>
+          </div>
+          <div class="menu-link-wrapper">
+            <a href="#services" class="menu-link-item">
+              <span>SERVICES</span>
+              <span class="menu-dot-indicator"></span>
+            </a>
+          </div>
+        </div>
+
+        <div class="menu-nav-column">
+          <div class="menu-link-wrapper">
+            <a href="#approach" class="menu-link-item">
+              <span>APPROACH</span>
+              <span class="menu-dot-indicator"></span>
+            </a>
+          </div>
+          <div class="menu-link-wrapper">
+            <a href="#studio" class="menu-link-item">
+              <span>STUDIO</span>
+              <span class="menu-dot-indicator"></span>
+            </a>
+          </div>
+          <div class="menu-link-wrapper">
+            <a href="#contact" class="menu-link-item">
+              <span>CONTACT</span>
+              <span class="menu-dot-indicator"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-footer-bar">
+      <span>HELLO@STUDIONAMMA.AGENCY</span>
+      <div class="menu-social-links">
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LINKEDIN ↗</a>
+        <a href="https://behance.net" target="_blank" rel="noopener noreferrer">BEHANCE ↗</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <section class="hero" id="hero">
+
+      <div class="hero-content">
+        <h1 class="hero-giant-title animate">WE THINK</h1>
+        <h1 class="hero-giant-title animate">CRAFT AND</h1>
+        <h1 class="hero-giant-title animate">DESIGN</h1>
+        <div class="hero-scroll-indicator font-mono">[ SCROLL DOWN ↓ ]</div>
+      </div>
+    </section>
+
+    <section class="section-showreel" id="showreel">
+      <div class="showreel-video-container" data-cursor="project">
+        <video class="showreel-bg-video" autoplay loop muted playsinline poster="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1600&auto=format&fit=crop">
+          <source src="https://studionamma.vercel.app/videos/matera/matera-highlight-2.mp4" type="video/mp4">
+        </video>
+        <div class="showreel-overlay-tint"></div>
+        <div class="showreel-center-caption">
+          <p class="showreel-tag">[ SHOWREEL 2026 ]</p>
+          <h2 class="showreel-title animate">MOTION & CRAFT</h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-intro" id="intro">
+      <div class="container">
+        <p class="intro-tag-small animate font-mono">Creative studio building premium brands.</p>
+
+        <h2 class="intro-large-text animate">IT'S NEVER</h2>
+        <h2 class="intro-large-text animate">"JUST A WEBSITE."</h2>
+        <br>
+        <h2 class="intro-large-text animate">EVERY DETAIL</h2>
+        <h2 class="intro-large-text animate">MATTERS.</h2>
+        <br>
+        <h2 class="intro-large-text animate">WE CRAFT</h2>
+        <h2 class="intro-large-text animate">DIGITAL</h2>
+        <h2 class="intro-large-text animate">EXPERIENCES.</h2>
+      </div>
+    </section>
+
+    <section class="section-playground" id="playground">
+      <h2 class="playground-huge-heading animate">PLAYGROUND</h2>
+    </section>
+
+    <section class="section-projects-grid" id="work">
+      <div class="container">
+
+        <section class="slideImage">
+
+          <div class="image-card left-card" data-cursor="project">
+            <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200&auto=format&fit=crop"
+                 alt="SILVR Project"
+                 loading="lazy">
+          </div>
+
+          <div class="image-card right-card" data-cursor="project">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop"
+                 alt="AETHER Project"
+                 loading="lazy">
+          </div>
+
+          <div class="image-card left-card" data-cursor="project">
+            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1200&auto=format&fit=crop"
+                 alt="MONO Project"
+                 loading="lazy">
+          </div>
+
+          <div class="image-card right-card" data-cursor="project">
+            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200&auto=format&fit=crop"
+                 alt="FORM Project"
+                 loading="lazy">
+          </div>
+        </section>
+
+        <div class="project-info-block">
+          <div class="project-info-left">
+            <span class="project-number">01</span>
+            <h3 class="project-title">SILVR</h3>
+          </div>
+          <span class="project-category">Branding<br>Digital Experience</span>
+        </div>
+
+        <div class="project-info-block">
+          <div class="project-info-left">
+            <span class="project-number">02</span>
+            <h3 class="project-title">AETHER</h3>
+          </div>
+          <span class="project-category">Creative Direction<br>Web Design</span>
+        </div>
+
+        <div class="project-info-block">
+          <div class="project-info-left">
+            <span class="project-number">03</span>
+            <h3 class="project-title">MONO</h3>
+          </div>
+          <span class="project-category">Visual Identity<br>Digital</span>
+        </div>
+
+        <div class="project-info-block">
+          <div class="project-info-left">
+            <span class="project-number">04</span>
+            <h3 class="project-title">FORM</h3>
+          </div>
+          <span class="project-category">Brand Strategy<br>Web Experience</span>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section-services" id="services">
+      <div class="container">
+        <p class="services-tag font-mono animate">[ SERVICES & DISCIPLINES ]</p>
+
+        <div class="services-list">
+          <h2 class="service-item animate">ART DIRECTION</h2>
+          <h2 class="service-item animate">BRANDING</h2>
+          <h2 class="service-item animate">WEB DESIGN</h2>
+          <h2 class="service-item animate">WEB DEVELOPMENT</h2>
+          <h2 class="service-item animate">UI / UX</h2>
+          <h2 class="service-item animate">MOTION</h2>
+          <h2 class="service-item animate">CREATIVE STRATEGY</h2>
+          <h2 class="service-item animate">CONTENT</h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-approach" id="approach">
+      <div class="container">
+        <p class="services-tag font-mono animate">[ 05 — METHODOLOGY ]</p>
+
+        <div class="approach-steps-list">
+          <h2 class="approach-step-item animate">01 — DISCOVER</h2>
+          <h2 class="approach-step-item animate">02 — DEFINE</h2>
+          <h2 class="approach-step-item animate">03 — DESIGN</h2>
+          <h2 class="approach-step-item animate">04 — BUILD</h2>
+          <h2 class="approach-step-item animate">05 — REFINE</h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-studio" id="studio">
+      <div class="container">
+        <h2 class="studio-huge-heading animate">STUDIO</h2>
+        <p class="studio-statement-copy animate">
+          We are a creative studio focused on branding, digital experiences and visual storytelling.
+        </p>
+      </div>
+    </section>
+
+    <section class="section-contact" id="contact">
+      <div class="container">
+        <h2 class="contact-headline-huge animate">
+          LET'S TALK.<br>
+          LET'S MAKE<br>
+          SOMETHING<br>
+          GREAT.
+        </h2>
+
+        <div class="contact-form-box animate">
+          <form id="contactFormElement" class="contact-form-element" novalidate>
+            <div class="form-row-2col">
+              <div class="form-input-group">
+                <label for="userNameInput" class="form-label-mono">NAME *</label>
+                <input type="text" id="userNameInput" name="name" class="form-field-ctrl" placeholder="Your Name" required>
+                <span class="form-error-hint">Please enter your name</span>
+              </div>
+
+              <div class="form-field-group">
+                <label for="userEmailInput" class="form-label-mono">EMAIL *</label>
+                <input type="email" id="userEmailInput" name="email" class="form-field-ctrl" placeholder="name@company.com" required>
+                <span class="form-error-hint">Please enter a valid email</span>
+              </div>
+            </div>
+
+            <div class="form-input-group">
+              <label for="userProjectInput" class="form-label-mono">PROJECT TYPE</label>
+              <input type="text" id="userProjectInput" name="project" class="form-field-ctrl" placeholder="Branding, Web Design, Development...">
+            </div>
+
+            <div class="form-input-group">
+              <label for="userMessageInput" class="form-label-mono">MESSAGE *</label>
+              <textarea id="userMessageInput" name="message" class="form-field-ctrl form-textarea-ctrl" placeholder="Tell us about your project brief..." required></textarea>
+              <span class="form-error-hint">Please enter a message</span>
+            </div>
+
+            <button type="submit" class="btn-start-project" id="startProjectBtn">
+              <span>START A PROJECT</span>
+              <span>↗</span>
+            </button>
+          </form>
+
+          <div class="contact-success-panel" id="contactSuccessPanel" aria-live="polite">
+            <div class="success-badge-icon">✓</div>
+            <h3 class="success-title-bold">MESSAGE RECEIVED</h3>
+            <p class="success-desc-text">Thank you for reaching out. We will get back to you within 24 hours.</p>
+            <button type="button" class="btn-reset-form" id="resetContactBtn">Send another message</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-layout">
+        <span class="footer-brand-huge">STUDIO NAMMA</span>
+
+        <div class="footer-cols-group">
+          <div class="footer-col-item">
+            <span class="footer-col-title">NAVIGATION</span>
+            <a href="#hero" class="footer-nav-anchor">WORK</a>
+            <a href="#services" class="footer-nav-anchor">SERVICES</a>
+            <a href="#approach" class="footer-nav-anchor">APPROACH</a>
+            <a href="#studio" class="footer-nav-anchor">STUDIO</a>
+            <a href="#contact" class="footer-nav-anchor">CONTACT</a>
+          </div>
+
+          <div class="footer-col-item">
+            <span class="footer-col-title">SOCIAL</span>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-nav-anchor">INSTAGRAM ↗</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-nav-anchor">LINKEDIN ↗</a>
+            <a href="https://behance.net" target="_blank" rel="noopener noreferrer" class="footer-nav-anchor">BEHANCE ↗</a>
+          </div>
+
+          <div class="footer-col-item">
+            <span class="footer-col-title">INQUIRIES</span>
+            <a href="mailto:hello@studionamma.agency" class="footer-nav-anchor">HELLO@STUDIONAMMA.AGENCY</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-layout">
+        <span>© 2026 Studio Namma</span>
+        <span>All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <aside class="bottom-info-bar" aria-label="Live Status and Location">
+    <div class="container bottom-info-inner">
+      <div class="bottom-left-statement">
+        <span>WE CRAFT BOLD DESIGN & CLEAN DIGITAL EXPERIENCES.</span>
+      </div>
+      <div class="bottom-right-clock">
+        <span class="clock-location" id="liveClockLocation">MUMBAI, INDIA</span>
+        <span class="clock-time" id="liveClockTime">00:00:00</span>
+      </div>
+    </div>
+  </aside>
+
+  <a href="https://wa.me/33780979269" target="_blank" rel="noopener noreferrer" class="floating-whatsapp-btn" id="whatsappFloatingBtn" aria-label="Chat on WhatsApp">
+    <svg class="whatsapp-svg-icon" viewBox="0 0 24 24">
+      <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.97.53 1.95.814 2.796.815 3.183 0 5.769-2.587 5.77-5.768 0-1.543-.601-2.993-1.692-4.084-1.092-1.092-2.541-1.695-4.078-1.695zm3.383 8.163c-.144.405-.837.774-1.17.823-.312.045-.693.074-1.087-.052-.404-.129-.926-.302-1.597-.599-1.391-.615-2.29-2.023-2.36-2.115-.069-.093-.563-.75-.563-1.43 0-.68.356-1.014.483-1.151.127-.137.277-.172.37-.172.093 0 .185.001.266.005.085.004.198-.032.31.237.116.279.397.969.431 1.039.035.07.058.152.012.245-.047.092-.07.15-.139.231-.07.081-.147.181-.21.242-.07.068-.143.142-.061.282.081.141.361.596.775.965.534.475.984.622 1.124.692.14.07.222.059.304-.035.082-.093.351-.408.445-.548.093-.14.187-.116.315-.07.128.046.813.383.953.453.14.07.233.105.268.163.035.058.035.337-.109.742z"/>
+    </svg>
+  </a>
+
+  <script src="dark-mode/dark-mode.js"></script>
+  <script src="nav/nav.js"></script>
+  <script src="menu/menu.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
