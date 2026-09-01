@@ -14,7 +14,7 @@ A collaborative frontend project inspired by the Studio Namma website, developed
 ## 🌿 Branch Structure
 
 ```text
-main
+master
 │
 ├── feature/home       → Man Patel
 ├── feature/dark-mode  → Farhan Khan
