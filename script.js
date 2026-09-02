@@ -2,8 +2,7 @@
   'use strict';
 
 
-  const WHATSAPP_PHONE = '33780979269'; 
-  const WHATSAPP_DEFAULT_MSG = 'Hello Studio Namma, I would like to start a project.';
+
   const CLOCK_LOCATION = 'MUMBAI, INDIA';
   const CLOCK_TIMEZONE = 'Asia/Kolkata';
 
@@ -186,13 +185,6 @@
   }
 
  
-  // function initWhatsAppButton() {
-  //   // const btn = document.getElementById('whatsappFloatingBtn');
-  //   // if (!btn) return;
-
-  //   // const encoded = encodeURIComponent(WHATSAPP_DEFAULT_MSG);
-  //   // btn.href = `https://wa.me/${WHATSAPP_PHONE}?text=${encoded}`;
-  // }
 
  
   function initContactForm() {
