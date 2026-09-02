@@ -271,13 +271,15 @@ body.cursor-hover #cursor {
 
 .hero-giant-title {
   font-family: var(--font-heading);
-  font-size: clamp(80px, 12vw, 190px);
+  font-size: clamp(70px, 10vw, 160px);
   font-weight: 900;
   line-height: 0.82;
   letter-spacing: -0.06em;
   text-transform: uppercase;
   text-align: center;
   pointer-events: auto;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .hero-scroll-indicator {
