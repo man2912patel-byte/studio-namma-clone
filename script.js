@@ -257,7 +257,6 @@
     initImageGridObserver();
     initUnifiedCursorSystem();
     initLiveClock();
-    initWhatsAppButton();
     initContactForm();
   });
 })();
