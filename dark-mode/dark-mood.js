@@ -1,55 +1,40 @@
 
-(function () {
-  'use strict';
 
-  const THEME_KEY = 'namma_theme_mode';
-  const root = document.documentElement;
+let darkButtons = document.querySelectorAll(".dark-mode-toggle, #darkModeBtn");
+let darkLabels = document.querySelectorAll(".dark-mode-label, #darkModeLabel");
 
-  function initDarkMode() {
-    const savedTheme = localStorage.getItem(THEME_KEY);
-    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const initialTheme = savedTheme || (prefersDark ? 'dark' : 'light');
 
-    setTheme(initialTheme);
-    bindButtons();
-  }
+let savedTheme = localStorage.getItem("theme");
 
-  function setTheme(theme) {
-    root.setAttribute('data-theme', theme);
-    localStorage.setItem(THEME_KEY, theme);
+if (savedTheme === "dark") {
+  document.documentElement.setAttribute("data-theme", "dark");
+  darkLabels.forEach(function(label) {
+    label.textContent = "LIGHT MODE";
+  });
+} else {
+  document.documentElement.setAttribute("data-theme", "light");
+  darkLabels.forEach(function(label) {
+    label.textContent = "DARK MODE";
+  });
+}
 
-    const labels = document.querySelectorAll('.dark-mode-label, #darkModeLabel');
-    labels.forEach((label) => {
-      label.textContent = theme === 'dark' ? 'LIGHT MODE' : 'DARK MODE';
-    });
 
-    window.dispatchEvent(new CustomEvent('themeChanged', { detail: { theme } }));
-  }
+darkButtons.forEach(function(button) {
+  button.addEventListener("click", function() {
+    let currentTheme = document.documentElement.getAttribute("data-theme");
 
-  function toggleTheme() {
-    const current = root.getAttribute('data-theme') || 'light';
-    const next = current === 'dark' ? 'light' : 'dark';
-    setTheme(next);
-  }
-
-  function bindButtons() {
-    const buttons = document.querySelectorAll('.dark-mode-toggle, #darkModeBtn');
-    buttons.forEach((btn) => {
-      btn.removeEventListener('click', toggleTheme);
-      btn.addEventListener('click', toggleTheme);
-    });
-  }
-
-  window.DarkMode = {
-    init: initDarkMode,
-    toggle: toggleTheme,
-    setTheme: setTheme,
-    getTheme: () => root.getAttribute('data-theme') || 'light'
-  };
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initDarkMode);
-  } else {
-    initDarkMode();
-  }
-})();
+    if (currentTheme === "dark") {
+      document.documentElement.setAttribute("data-theme", "light");
+      localStorage.setItem("theme", "light");
+      darkLabels.forEach(function(label) {
+        label.textContent = "DARK MODE";
+      });
+    } else {
+      document.documentElement.setAttribute("data-theme", "dark");
+      localStorage.setItem("theme", "dark");
+      darkLabels.forEach(function(label) {
+        label.textContent = "LIGHT MODE";
+      });
+    }
+  });
+});
