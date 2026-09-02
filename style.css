@@ -386,7 +386,7 @@ body.cursor-hover #cursor {
 
 .playground-huge-heading {
   font-family: var(--font-heading);
-  font-size: clamp(60px, 12vw, 190px);
+  font-size: clamp(50px, 7vw, 120px);
   font-weight: 900;
   line-height: 0.85;
   letter-spacing: -0.05em;
