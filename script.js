@@ -186,13 +186,13 @@
   }
 
  
-  function initWhatsAppButton() {
-    const btn = document.getElementById('whatsappFloatingBtn');
-    if (!btn) return;
+  // function initWhatsAppButton() {
+  //   // const btn = document.getElementById('whatsappFloatingBtn');
+  //   // if (!btn) return;
 
-    const encoded = encodeURIComponent(WHATSAPP_DEFAULT_MSG);
-    btn.href = `https://wa.me/${WHATSAPP_PHONE}?text=${encoded}`;
-  }
+  //   // const encoded = encodeURIComponent(WHATSAPP_DEFAULT_MSG);
+  //   // btn.href = `https://wa.me/${WHATSAPP_PHONE}?text=${encoded}`;
+  // }
 
  
   function initContactForm() {
