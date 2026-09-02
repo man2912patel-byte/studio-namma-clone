@@ -1,4 +1,5 @@
 
+
 :root {
   --bg: #eeeeee;
   --text: #111111;
@@ -6,7 +7,6 @@
   --border: #cccccc;
   --accent: #0044ff;
   --card-bg: #e2e2e2;
-  --card-hover: #d5d5d5;
   --overlay-bg: rgba(238, 238, 238, 0.98);
 }
 
@@ -17,31 +17,14 @@
   --border: #333333;
   --accent: #0066ff;
   --card-bg: #1a1a1a;
-  --card-hover: #242424;
   --overlay-bg: rgba(17, 17, 17, 0.98);
 }
 
-/* Global Theme Transition */
-body,
-section,
-header,
-footer,
-nav,
-div,
-article,
-button,
-input,
-textarea,
-select,
-.image-card,
-.service-item,
-.step-card {
-  transition: background-color 0.5s ease,
-              color 0.5s ease,
-              border-color 0.5s ease;
+body, section, header, footer, nav, article, .image-card {
+  transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease;
 }
 
-/* Dark Mode Button Styling */
+
 .dark-mode-toggle {
   background: none;
   border: none;
@@ -49,14 +32,11 @@ select,
   font-family: var(--font-mono, monospace);
   font-size: 0.8rem;
   font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
   cursor: pointer;
-  padding: 0.4rem 0.6rem;
+  padding: 5px 10px;
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  transition: color 0.25s ease, opacity 0.25s ease;
+  gap: 8px;
 }
 
 .dark-mode-toggle:hover {
@@ -69,9 +49,4 @@ select,
   height: 6px;
   border-radius: 50%;
   background-color: var(--accent);
-  transition: transform 0.3s ease;
-}
-
-.dark-mode-toggle:hover .dark-mode-indicator {
-  transform: scale(1.4);
 }
